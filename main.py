@@ -1,8 +1,8 @@
 from discord.ext import commands
 import discord as di
 import crawling
+import os
 
-TOKEN = "#"
 clinet = commands.Bot(command_prefix="/")
 
 def insertL(data, j, k):
@@ -39,5 +39,5 @@ async def display(ctx):
 
     await ctx.send(embed=embed)
 
-clinet.run(TOKEN)
+clinet.run(os.environ['token'])
 
