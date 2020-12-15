@@ -29,7 +29,7 @@ async def on_ready():
 
 @clinet.command(name='채권')
 async def display(ctx):
-    data = crawling.crwaling()
+    data = crawling.crwaling_daguta()
     embed = di.Embed(colour=di.Colour.dark_gold())
     embed.set_author(name="채권")
     embed.add_field(name='옷감', value=insertL(data, 1, 5), inline=False)
