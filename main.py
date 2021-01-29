@@ -54,3 +54,5 @@ async def display(ctx):
 
 clinet.run(os.environ['token'])
 
+def test():
+    return
