@@ -30,6 +30,7 @@ async def on_ready():
     print(bot.user.name)
     print(bot.user.id)
     print('--------------')
+    print(bot.guilds)
 
 
 @bot.command(name='채권')
